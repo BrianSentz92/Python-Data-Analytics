@@ -2,67 +2,83 @@
 
 ## Overview
 
-This repository contains Python projects focused on data analysis, statistical modeling, automation, and business problem solving. Each project is designed to demonstrate practical analytical techniques using real-world datasets and reproducible workflows.
+This repository contains Python projects focused on data analysis, statistical modeling, machine learning, automation, and business problem solving. Each project demonstrates practical analytical techniques using real-world datasets and reproducible workflows.
 
-The projects emphasize clear documentation, thoughtful analysis, and communicating results that support data-driven decision-making.
+The projects emphasize clean code, clear documentation, and communicating results that support data-driven decision-making.
 
 ---
 
 ## Featured Projects
 
-### Linear Regression
+### Stock Market Analyzer
 
-Builds and evaluates a simple linear regression model to analyze relationships between variables and generate predictive insights.
+Retrieves live financial market data using the Yahoo Finance API and performs exploratory stock analysis. The project demonstrates API integration, financial data analysis, moving averages, and data visualization.
+
+**Skills Demonstrated**
+
+- API Integration
+- Financial Data Analysis
+- Exploratory Data Analysis (EDA)
+- Time Series Analysis
+- Data Visualization
+
+---
+
+### Used Car Data Cleaning Pipeline
+
+Transforms a raw used vehicle sales dataset into a clean, model-ready dataset through missing value handling, outlier detection, and data preprocessing.
 
 **Skills Demonstrated**
 
 - Data Cleaning
 - Exploratory Data Analysis (EDA)
-- Linear Regression
+- Data Preprocessing
+- Outlier Detection
 - Data Visualization
-- Model Evaluation
 
 ---
 
-### Multiple Regression
+### SAT Score Linear Regression
 
-Develops a multiple linear regression model using several independent variables to improve predictive performance and interpret feature importance.
+Builds and evaluates a simple linear regression model using scikit-learn to predict student GPA from SAT scores.
 
 **Skills Demonstrated**
 
-- Feature Engineering
-- Multiple Regression
-- Statistical Analysis
+- Linear Regression
+- Model Training
+- Model Evaluation
+- Predictive Analytics
+- Data Visualization
+
+---
+
+### Student GPA Multiple Linear Regression
+
+Develops a multiple linear regression model using multiple independent variables to predict student GPA and evaluate feature contributions.
+
+**Skills Demonstrated**
+
+- Multiple Linear Regression
+- Feature Selection
 - Model Interpretation
-- Performance Evaluation
+- Predictive Analytics
+- Statistical Analysis
 
 ---
 
 ### Programming Language Trends
 
+*In Progress*
+
 Analyzes historical programming language popularity using publicly available datasets to identify long-term trends and patterns.
-
-**Skills Demonstrated**
-
-- Data Cleaning
-- Pandas
-- Time Series Analysis
-- Data Visualization
-- Trend Analysis
 
 ---
 
-### Resume Analyzer
+### Resume Narrator
 
-Processes resume content using Python to evaluate structure, identify keywords, and support resume optimization.
+*In Progress*
 
-**Skills Demonstrated**
-
-- Text Processing
-- File Handling
-- String Manipulation
-- Automation
-- Data Extraction
+Reads PDF resumes aloud using Python text-to-speech, demonstrating PDF parsing, text processing, and desktop automation.
 
 ---
 
@@ -72,7 +88,9 @@ Processes resume content using Python to evaluate structure, identify keywords, 
 - Pandas
 - NumPy
 - Matplotlib
-- Scikit-learn
+- Seaborn
+- Scikit-Learn
+- yfinance
 - Jupyter Notebook
 
 ---
@@ -82,10 +100,12 @@ Processes resume content using Python to evaluate structure, identify keywords, 
 ```text
 Python Data Analytics/
 │
-├── Linear Regression/
-├── Multiple Regression/
+├── Stock Market Analyzer/
+├── Used Car Data Cleaning Pipeline/
+├── SAT Score Linear Regression/
+├── Student GPA Multiple Linear Regression/
 ├── Programming Language Trends/
-├── Resume Analyzer/
+├── Resume Narrator/
 └── Archive/
 ```
 
@@ -93,4 +113,4 @@ Python Data Analytics/
 
 ## Purpose
 
-The purpose of this repository is to demonstrate practical applications of Python for business analytics, predictive modeling, and process automation. Each project focuses on solving a specific business or analytical problem while following clean coding practices and providing clear documentation.
+The purpose of this repository is to demonstrate practical applications of Python for business analytics, predictive modeling, data preparation, automation, and exploratory data analysis. Each project focuses on solving a real analytical problem while showcasing reproducible workflows and clear documentation.
