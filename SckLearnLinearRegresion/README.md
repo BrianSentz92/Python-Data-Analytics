@@ -108,7 +108,7 @@ This project demonstrates how to:
 
 The scatter plot below illustrates the positive relationship between SAT scores and student GPA.
 
-[SAT Score vs GPA](figures/sat_vs_gpa.png)
+![SAT Score vs GPA](figures/sat_vs_gpa.png)
 
 ---
 
@@ -116,7 +116,7 @@ The scatter plot below illustrates the positive relationship between SAT scores 
 
 The fitted regression line demonstrates how the model predicts GPA based on SAT score.
 
-[Regression Line](figures/regression_line.png)
+![Regression Line](figures/regression_line.png)
 
 ---
 
