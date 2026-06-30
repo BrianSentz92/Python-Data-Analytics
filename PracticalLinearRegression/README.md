@@ -33,6 +33,40 @@ This project demonstrates a repeatable preprocessing pipeline that prepares auto
 
 ---
 
+## Installation
+
+### Option 1: Download the Repository
+
+1. Click **Code** → **Download ZIP** on GitHub.
+2. Extract the ZIP file.
+3. Open the project folder.
+
+### Option 2: Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/Used-Car-Data-Cleaning-Pipeline.git
+```
+
+### Install the Required Packages
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the Jupyter Notebook
+
+Launch Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Open **Used Car Data Cleaning Pipeline.ipynb** and select **Run → Run All Cells**.
+
+The notebook is self-contained and loads the dataset directly from the project folder. No code modifications are required.
+
+---
+
 ## Project Workflow
 
 1. Load the raw vehicle sales dataset
@@ -82,6 +116,23 @@ Used-Car-Data-Cleaning-Pipeline/
 └── figures/
     └── before_after_distributions.png
 ```
+
+---
+
+## Jupyter Notebook
+
+This repository also includes a Jupyter Notebook documenting the complete data cleaning workflow.
+
+The notebook is designed to run from start to finish without modification after installing the required packages. Simply open **Used Car Data Cleaning Pipeline.ipynb** and select **Run → Run All Cells**.
+
+The notebook demonstrates:
+
+- Loading the raw dataset
+- Exploring data quality
+- Cleaning missing values
+- Removing outliers
+- Comparing distributions before and after cleaning
+- Exporting a cleaned dataset
 
 ---
 
