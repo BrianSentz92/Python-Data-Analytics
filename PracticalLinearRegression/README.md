@@ -1,127 +1,118 @@
-Practical Linear Regression: Real-World Data Cleaning (Used Cars)
+# Used Car Data Cleaning Pipeline
 
-This project demonstrates a realistic data cleaning workflow for a used-car pricing problem prior to building a linear regression model.
+## Overview
 
-The focus is intentionally **not** on model accuracy yet.  
-Instead, the goal is to make the dataset **safe, defensible, and interpretable** for modeling.
+Real-world datasets are rarely ready for analysis. Missing values, inconsistent formatting, and extreme outliers can significantly reduce the quality of statistical models and machine learning algorithms.
 
-This mirrors how real data science work happens in production.
-
----
-
-## Project Objective
-
-Predict the price of a used car based on its specifications, including:
-
-- brand
-- body type
-- mileage
-- engine volume
-- year of production
-
-Before any modeling can occur, the raw dataset must be cleaned to address:
-
-- missing values  
-- extreme outliers  
-- invalid domain values  
-- high-cardinality categorical variables  
+This project demonstrates a complete data cleaning workflow using a used vehicle sales dataset. The accompanying Jupyter Notebook documents each preprocessing step, from loading and inspecting the raw data to cleaning, visualization, and exporting a model-ready dataset.
 
 ---
 
-Why Visualizations Are Included
+## Business Problem
 
-The visualizations in this project are not exploratory fluff.  
-They are evidence that cleaning decisions were necessary and effective.
+Predictive models are only as reliable as the data used to train them.
 
-Each visualization answers a specific modeling risk question.
+Before building regression models, analysts must identify and correct common data quality issues, including:
 
-1. Histograms (Univariate)
-Question: 
-Is this variable heavily skewed or dominated by extreme outliers?
+- Missing values
+- Inconsistent column names
+- Invalid observations
+- Extreme outliers
+- Data formatting inconsistencies
 
-Why it matters:
-Linear regression is sensitive to extreme values.  
-A small number of unusually large observations can dominate coefficients and lead to unstable predictions.
-
----
-
-2. Scatter Plots (Bivariate)
-Question:  
-Does this feature have a plausible relationship with price?
-
-Why it matters: 
-Linear regression assumes stable, mostly monotonic relationships.  
-Scatter plots expose leverage points and reveal whether the data behaves logically.
-
----
-3. Before vs After Comparisons
-Cleaning decisions must be defensible.
-
-By saving before-and-after plots, we:
-- prove the data had real problems
-- show that cleaning improved distributions
-- document decisions for reviewers and stakeholders
+This project demonstrates a repeatable preprocessing pipeline that prepares automotive sales data for future predictive modeling.
 
 ---
 
-Visual Evidence
+## Technologies Used
 
-All plots are saved automatically to the 'figures` folder.
-
-Price Distribution
-Before Price Distribution(figures/before_price_distribution.png)
-After Price Distribution(figures/after_price_distribution.png)
-
-Mileage vs Price
-Before Mileage vs Price(figures/before_mileage_vs_price.png)
-After Mileage vs Price(figures/after_mileage_vs_price.png)
-
-Year vs Price
-Before Year vs Price(figures/before_year_vs_price.png)
-After Year vs Price(figures/after_year_vs_price.png)
+- Python
+- Pandas
+- Matplotlib
+- Jupyter Notebook
 
 ---
 
-Cleaning Steps
+## Project Workflow
 
-1. Normalize column names
-2. Rename enginev → `engine_volume`
-3. Drop `model` column
-4. Remove missing values
-5. Remove price outliers (top 1%)
-6. Remove mileage outliers (top 1%)
-7. Apply engine volume domain rules
-8. Remove extreme vintage vehicles
-9. Reset index and save cleaned data
-
-Output: `cars_cleaned.csv`
+1. Load the raw vehicle sales dataset
+2. Standardize column names
+3. Explore the dataset structure
+4. Inspect summary statistics
+5. Identify missing values
+6. Remove incomplete records
+7. Filter unrealistic observations and outliers
+8. Compare data distributions before and after cleaning
+9. Export a cleaned dataset for future regression analysis
 
 ---
 
-How to Run
+## Key Results
 
-bash
-pip install pandas matplotlib
+The completed cleaning pipeline successfully:
 
-
-Run `PracticalLinearRegression.py` in PyCharm.
-
----
-
-PM Perspective
-
-Most ML risk exists before modeling.
-
-This project focuses on:
-- explainability
-- defensible assumptions
-- data quality risk reduction
-- stakeholder-readable artifacts
+- Standardized dataset column names
+- Removed records containing missing values
+- Filtered unrealistic engine sizes
+- Removed extreme price outliers
+- Removed extreme mileage outliers
+- Exported a cleaned dataset ready for predictive modeling
 
 ---
 
-Next Steps
+## Example Visualization
 
-- Log-transform price
-- Encode categorical variables
-- Train and evaluate a regression model
+The notebook includes visual comparisons demonstrating the impact of the cleaning process on the dataset.
+
+![Distribution Comparison](figures/before_after_distributions.png)
+
+---
+
+## Repository Structure
+
+```text
+Used-Car-Data-Cleaning-Pipeline/
+│
+├── Used Car Data Cleaning Pipeline.ipynb
+├── CarDataCleaning.py
+├── used_car_sales.csv
+├── used_car_sales_cleaned.csv
+├── README.md
+├── requirements.txt
+└── figures/
+    └── before_after_distributions.png
+```
+
+---
+
+## Skills Demonstrated
+
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Data Visualization
+- Outlier Detection
+- Data Preprocessing
+- Python
+- Pandas
+- Matplotlib
+- Jupyter Notebook
+
+---
+
+## Future Improvements
+
+Potential enhancements include:
+
+- Building linear regression models using the cleaned dataset
+- Feature engineering
+- Comparing multiple regression algorithms
+- Evaluating model performance using RMSE, MAE, and R²
+- Creating an interactive Tableau or Power BI dashboard from the cleaned data
+
+---
+
+## Author
+
+**Brian Sentz**
+
+This project is part of my Data Analytics and Technical Project Management portfolio and demonstrates practical data preparation techniques commonly used in business intelligence and machine learning workflows.
