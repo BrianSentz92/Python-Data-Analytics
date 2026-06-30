@@ -32,11 +32,35 @@ Users can analyze historical or intraday market performance, calculate descripti
 
 ## Installation
 
-Clone the repository and install the required packages.
+### Option 1: Download the Repository
+
+1. Click **Code** → **Download ZIP** on GitHub.
+2. Extract the ZIP file.
+3. Open the project folder.
+
+### Option 2: Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/Stock-Market-Analyzer.git
+```
+
+### Install the Required Packages
 
 ```bash
 pip install -r requirements.txt
 ```
+
+### Run the Jupyter Notebook
+
+Launch Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Open **Stock Market Analyzer.ipynb** and select **Run → Run All Cells**.
+
+The notebook is self-contained and downloads live market data automatically. No code modifications are required.
 
 ---
 
@@ -68,15 +92,17 @@ Stock Market Analyzer/
 
 ## Sample Visualization
 
-
 ![Stock Market Analyzer](images/stock-market-analyzer.png)
-
 
 ---
 
 ## Jupyter Notebook
 
-This repository also includes a Jupyter Notebook demonstrating the analytical workflow used by the application. The notebook walks through:
+This repository also includes a Jupyter Notebook demonstrating the analytical workflow used by the application.
+
+The notebook is designed to run from start to finish without modification after installing the required packages. Simply open **Stock Market Analyzer.ipynb** and select **Run → Run All Cells**.
+
+The notebook walks through:
 
 - Downloading live stock market data
 - Exploring the dataset
