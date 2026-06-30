@@ -120,14 +120,6 @@ The fitted regression line demonstrates how the model predicts GPA based on SAT 
 
 ---
 
-### Linear Regression Model
-
-Regression line showing the fitted relationship between SAT scores and GPA.
-
-*(Screenshot to be added.)*
-
----
-
 ## Repository Structure
 
 ```text
