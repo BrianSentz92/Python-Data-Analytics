@@ -68,9 +68,15 @@ Develops a multiple linear regression model using multiple independent variables
 
 ### Programming Language Trends
 
-*In Progress*
+Analyzes historical programming language popularity using publicly available Stack Overflow data. The project demonstrates time-series analysis, data transformation using pivot tables, rolling averages, and data visualization to identify long-term technology trends.
 
-Analyzes historical programming language popularity using publicly available datasets to identify long-term trends and patterns.
+**Skills Demonstrated**
+
+- Time Series Analysis
+- Data Transformation
+- Exploratory Data Analysis (EDA)
+- Data Visualization
+- Trend Analysis
 
 ---
 
