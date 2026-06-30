@@ -2,21 +2,21 @@
 
 ## Overview
 
-The Stock Market Analyzer is a Python application that retrieves live stock market data from Yahoo Finance and provides descriptive statistics and visualizations for historical and intraday market performance.
+The Stock Market Analyzer is a Python application that retrieves live financial market data from the Yahoo Finance API and performs exploratory stock analysis.
 
-Users can analyze any publicly traded stock over a custom historical date range or using recent intraday intervals. The application demonstrates API integration, data analysis, and visualization using Python.
+Users can analyze historical or intraday market performance, calculate descriptive statistics, and visualize stock price trends using Matplotlib. The project demonstrates API integration, data analysis, and data visualization using Python.
 
 ---
 
 ## Features
 
-- Retrieve live stock market data using Yahoo Finance
+- Retrieve live stock market data using the Yahoo Finance API
 - Analyze historical performance using custom date ranges
-- Analyze recent intraday performance
+- Analyze recent intraday market activity
 - Calculate descriptive statistics
-- Generate historical price visualizations
-- Calculate a 20-period moving average
-- Export downloaded data to CSV
+- Visualize historical stock prices with Matplotlib
+- Display a 20-period moving average
+- Export historical market data to CSV
 
 ---
 
@@ -26,10 +26,21 @@ Users can analyze any publicly traded stock over a custom historical date range 
 - Pandas
 - Matplotlib
 - yfinance
+- Jupyter Notebook
 
 ---
 
-## Project Structure
+## Installation
+
+Clone the repository and install the required packages.
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Repository Structure
 
 ```text
 Stock Market Analyzer/
@@ -48,37 +59,47 @@ Stock Market Analyzer/
 1. Launch the application.
 2. Select Historical Analysis or Intraday Analysis.
 3. Enter a stock ticker.
-4. Choose a date range or interval.
+4. Select a date range or intraday interval.
 5. Review summary statistics.
-6. View the generated visualization.
+6. Visualize historical price performance.
 7. Optionally export the data to CSV.
 
 ---
 
-## Sample Output
+## Sample Visualization
 
-![Application Screenshot](images/stock-market-analyzer.png)
+
+![Stock Market Analyzer](images/stock-market-analyzer.png)
+
+
+---
+
+## Jupyter Notebook
+
+This repository also includes a Jupyter Notebook demonstrating the analytical workflow used by the application. The notebook walks through:
+
+- Downloading live stock market data
+- Exploring the dataset
+- Calculating summary statistics
+- Visualizing historical stock performance
 
 ---
 
 ## Future Enhancements
 
-Version 1 focuses on exploratory stock analysis using live market data.
+Potential improvements for future versions include:
 
-Future improvements include:
-
-- Stock comparison
-- Normalized investment returns
-- Multiple moving averages
+- Compare multiple stocks on a single chart
+- Normalize stock performance for investment comparisons
+- Additional moving averages
 - Volatility analysis
-- Portfolio analysis
-- Interactive dashboard
-- Streamlit web application
+- Technical indicators (RSI, MACD, Bollinger Bands)
+- Interactive dashboard using Streamlit
 
 ---
 
 ## Author
 
-Brian Sentz
+**Brian Sentz**
 
-PMP | Data Analytics | Python | SQL | Tableau
+Technical Project Manager | PMP | Data Analytics | Python | SQL | Tableau
