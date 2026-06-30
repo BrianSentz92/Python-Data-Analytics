@@ -62,24 +62,6 @@ Resume Narrator/
 4. Format the text for natural speech.
 5. Listen to the narrated resume.
 
----
-
-## Sample Output
-
-> Add a screenshot of the application or terminal output after running the program.
-
-```text
-images/resume-narrator.png
-```
-
-After adding the screenshot, replace the placeholder above with:
-
-```markdown
-![Resume Narrator](images/resume-narrator.png)
-```
-
----
-
 ## Jupyter Notebook
 
 This repository includes a Jupyter Notebook that demonstrates the application's workflow, including:
