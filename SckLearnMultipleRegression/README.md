@@ -99,10 +99,19 @@ This project demonstrates how to:
 
 ## Visualizations
 
-- Actual vs Predicted GPA
-- Multiple Regression Results
+### Actual vs. Predicted GPA
 
-*(Screenshots can be added later.)*
+The scatter plot below compares the model's predicted GPA against the actual GPA values in the dataset.
+
+![Actual vs Predicted GPA](figures/actual_vs_predicted_gpa.png)
+
+---
+
+### Multiple Regression Results
+
+This visualization summarizes the multiple linear regression model and illustrates the relationship between the independent variables and the predicted GPA.
+
+![Multiple Regression Results](figures/multiple_regression_results.png)
 
 ---
 
